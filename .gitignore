@@ -1,0 +1,7 @@
+# Global Ignore #
+#################
+*.exe
+
+
+Dreamsily/bin/*
+Dreamsily/obj/*
