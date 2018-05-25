@@ -8,24 +8,9 @@
         mc:Ignorable="d"
         Title="Dreamsily" Height="350" Width="525"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-        Background="{DynamicResource MaterialDesignPaper}"
-        FontFamily="{DynamicResource MaterialDesignFont}">
-    <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" FontSize="18" Height="31" Margin="101,30,0,0" FontWeight="DemiBold" TextWrapping="Wrap" Text="How long do you want to delay shutdown?" VerticalAlignment="Top" Width="366"/>
-        <Button x:Name="button" Content="Schedule" Height="48" Margin="101,247,284,0" VerticalAlignment="Top" Background="LightGreen" Click="button_Click"/>
-        <Button x:Name="button1" Content="Undo" HorizontalAlignment="Left" Margin="314,247,0,0" Width="132" Background="IndianRed" Click="button1_Click" Height="48" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radioButton" Content="1 hour" HorizontalAlignment="Left" Height="30" Margin="136,69,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="254" FontSize="20"/>
-        <RadioButton x:Name="radioButton1" Content="2 hours" HorizontalAlignment="Left" Height="30" Margin="136,99,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="254" FontSize="20"/>
-        <RadioButton x:Name="radioButton2" Content="3 hours" HorizontalAlignment="Left" Height="30" Margin="136,129,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="254" FontSize="20"/>
-        <RadioButton x:Name="radioButton3" Content="Surprise me" HorizontalAlignment="Left" Height="30" Margin="136,159,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="254" FontSize="20"/>
-        <RadioButton x:Name="radioButton4" HorizontalAlignment="Left" Margin="136,189,0,0" Height="40" FontSize="20" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="209">
-            <DockPanel>
-                <TextBox x:Name="textBox" Width="40" Height="30" GotFocus="textBox_GotFocus" VerticalScrollBarVisibility="Disabled" MaxLength="2" PreviewTextInput="textBox_PreviewTextInput" KeyDown="textBox_KeyDown">
-                </TextBox>
-                <Label x:Name="label" Content="hours" VerticalContentAlignment="Top" Height="35" />
-            </DockPanel>
-        </RadioButton>
-        <Image x:Name="surprise" Margin="0,30,4,0" Source="giphy.gif" Stretch="Fill" Visibility="Hidden"/>
-        <MediaElement x:Name="Surprise_wav" Margin="101,129,416,190" Stretch="Fill" LoadedBehavior="Manual" UnloadedBehavior="Stop" Volume="0.5"/>
-    </Grid>
+        Background="{DynamicResource MaterialDesignPaper}">
+    <DockPanel>
+        <Button x:Name="button" Content="Button" Height="319" VerticalAlignment="Top" Width="75"/>
+
+    </DockPanel>
 </Window>
