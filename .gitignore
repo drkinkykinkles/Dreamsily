@@ -1,7 +1,14 @@
 # Global Ignore #
 #################
 *.exe
+.vs/*
 
-
+# Build Output #
+################
 Dreamsily/bin/*
 Dreamsily/obj/*
+
+
+# Packages #
+############
+packages/*
