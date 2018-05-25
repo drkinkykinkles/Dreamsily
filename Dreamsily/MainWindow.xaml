@@ -3,10 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:Dreamsily"
         mc:Ignorable="d"
         Title="Dreamsily" Height="350" Width="525"
-        Background="SteelBlue">
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
     <Grid>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" FontSize="18" Height="31" Margin="101,30,0,0" FontWeight="DemiBold" TextWrapping="Wrap" Text="How long do you want to delay shutdown?" VerticalAlignment="Top" Width="366"/>
         <Button x:Name="button" Content="Schedule" Height="48" Margin="101,247,284,0" VerticalAlignment="Top" Background="LightGreen" Click="button_Click"/>

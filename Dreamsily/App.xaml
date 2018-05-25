@@ -4,6 +4,16 @@
              xmlns:local="clr-namespace:Dreamsily"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <FontFamily x:Key="ProductSansBold">pack://application:,,,/Fonts/Product Sans Bold</FontFamily>
+            <FontFamily x:Key="ProductSansItalic">pack://application:,,,/Fonts/Product Sans Italic</FontFamily>
+            <FontFamily x:Key="ProductSansRegular">pack://application:,,,/Fonts/Product Sans Regular</FontFamily>
+            <ResourceDictionary.MergedDictionaries x:Key="MaterialDesign">
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
